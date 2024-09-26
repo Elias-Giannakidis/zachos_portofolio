@@ -9,7 +9,7 @@ export function Zachos(){
         "width": "30%",
         "height": "30%",
         "boxShadow": isHovered ? "7px 7px 20px" : "5px 5px 30px",
-        "transform": isHovered ? "rotate(20deg) scale(0.8)" : "rotate(0deg) scale(1)",
+        "transform": isHovered ? "rotate(25deg) scale(0.8)" : "rotate(0deg) scale(1)",
         "transition": "box-shadow 0.6s ease, transform 3s ease, border-radius 3s ease",
     }
 
