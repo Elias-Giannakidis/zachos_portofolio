@@ -1,10 +1,9 @@
 import { View } from "react-native";
-import { Navigation } from "@/components/navigation/Navigation";
+import { Navigation } from "@/components/Navigation";
+import { Background} from "../components/Background";
 
 export default function Index() {
   return (
-    <View>
-      <Navigation/>
-    </View>
+      <Background/>
   );
 }
