@@ -1,7 +1,7 @@
 import {Colors} from "../constants/Colors"
 import React, {useState} from 'react'
 
-export function Background() {
+export function Background({ Page }: { Page: React.JSX.Element }) {
 
     const [isHovered, setIsHovered] = useState(false)
 
@@ -23,7 +23,7 @@ export function Background() {
         "boxShadow": isHovered ? "0px 0px 50px 30px" : "0px 0px 30px 20px",
         "transform": isHovered ? 'scale(1.01)' : 'scale(1)',
         "cursor": "url(../images/tattoo-machine.png) , auto",
-        "transition": "box-shadow 0.6s ease, transform 0.6s ease"
+        "transition": "box-shadow 0.6s ease, transform 0.6s ease",
     }
 
 
@@ -33,7 +33,9 @@ export function Background() {
                 style={foregroundStyle}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
-                ></div>
+                >
+                {Page}
+            </div>
         </div>
     )
 }

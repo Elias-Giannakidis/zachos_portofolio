@@ -1,9 +1,16 @@
 import { View } from "react-native";
-import { Navigation } from "@/components/Navigation";
 import { Background} from "../components/Background";
+import { InstagramIcon, FacebookIcon, DriveIcon } from "@/components/RedirectElements";
+import { Zachos } from "@/components/Zachos";
 
 export default function Index() {
   return (
-      <Background/>
+      <Background Page={<div>
+        <Zachos/>
+        <InstagramIcon/>
+        <FacebookIcon/>
+        <DriveIcon/>
+        </div>}>
+      </Background>
   );
 }
