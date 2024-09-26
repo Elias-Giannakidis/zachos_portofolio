@@ -28,7 +28,8 @@ export function Icon(props: IconProps){
         "backgroundColor": props.color,
         "borderRadius": "0px 20px 20px 0px",
         "display": "flex",
-        "justifyContent": "flex-end"
+        "justifyContent": "flex-end",
+        "cursor": "url(../images/tattoo-machine.png) , auto",
     }
 
     return (
