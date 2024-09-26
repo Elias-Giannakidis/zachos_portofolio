@@ -22,6 +22,7 @@ export function Background() {
         "borderWidth": "8px",
         "boxShadow": isHovered ? "0px 0px 50px 30px" : "0px 0px 30px 20px",
         "transform": isHovered ? 'scale(1.01)' : 'scale(1)',
+        "cursor": "url(../images/tattoo-machine.png) , auto",
         "transition": "box-shadow 0.6s ease, transform 0.6s ease"
     }
 
